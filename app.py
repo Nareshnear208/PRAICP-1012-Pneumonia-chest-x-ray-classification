@@ -1,3 +1,5 @@
+import os
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"  # Suppresses TensorFlow warnings for cleaner output
 import streamlit as st
 import tensorflow as tf
 import numpy as np

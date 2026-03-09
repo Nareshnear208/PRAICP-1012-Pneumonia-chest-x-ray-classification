@@ -2,6 +2,10 @@
 
 ## 🩺 Chest X-Ray Pneumonia Detection using Deep Learning
 
+![Workflow Status](https://github.com/Nareshnear208/PRAICP-1012-Pneumonia-chest-x-ray-classification/actions/workflows/docker.yml/badge.svg)
+![Docker Pulls](https://img.shields.io/docker/pulls/nareshbabu2026ai/chest-xray-streamlit)
+![Python](https://img.shields.io/badge/python-3.10-blue)
+
 A Deep Learning web application that detects Pneumonia from Chest X-Ray images using a trained Convolutional Neural Network (CNN).
 
 The application is built with Python, deployed with Docker, and automated using CI/CD pipelines.

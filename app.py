@@ -18,12 +18,14 @@ st.set_page_config(
 st.title("🫁 Pneumonia Detection from Chest X-ray")
 st.write("Upload a chest X-ray image to predict **NORMAL** or **PNEUMONIA**.")
 
+st.write("Loading AI model...")
+
 # Model Loading
 @st.cache_resource      # Loads the trained CNN model & Caches it so it loads only once--> no need every time
-def load_model():       # Internal load function
+def load_pneumonia_model():
     return tf.keras.models.load_model("best_pneumonia_model3.keras")
 
-model = load_model()
+model = load_pneumonia_model()
 
 # Class Names & Threshold
 CLASS_NAMES = ["NORMAL", "PNEUMONIA"]       # Maps output → human-readable labels

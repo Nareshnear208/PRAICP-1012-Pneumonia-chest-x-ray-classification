@@ -23,7 +23,7 @@ st.write("Loading AI model...")
 # Model Loading
 @st.cache_resource      # Loads the trained CNN model & Caches it so it loads only once--> no need every time
 def load_pneumonia_model():
-    return tf.keras.models.load_model("best_pneumonia_model3.keras")
+    return tf.keras.models.load_model("best_pneumonia_model3.keras", compile=False)
 
 model = load_pneumonia_model()
 
